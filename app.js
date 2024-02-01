@@ -12,9 +12,6 @@ const app = express();
 const db = require('./utils/db');
 const globalErrorHandler = require('./controllers/errorController');
 
-// setting up 
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
 // Global middleware
 // Serving static files
 app.use(express.static(path.join(__dirname, 'public')));
